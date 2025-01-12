@@ -1,0 +1,55 @@
+name: catalyst
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil:
+  dio:
+  carousel_slider:
+  provider:
+  equatable:
+  flutter_styled_toast:
+  shared_preferences:
+  quickalert:
+  salomon_bottom_bar:
+  infinite_scroll_pagination: ^4.1.0
+  flutter_slidable: ^3.1.2
+  video_player: ^2.8.6
+  chewie: ^1.8.1
+  cached_network_image: ^3.4.1
+
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins.ttf
+
+    - family: IconBroken
+      fonts:
+        - asset: assets/icons/icons.ttf
