@@ -1,5 +1,4 @@
 import 'package:catalyst/config/Strings/app_strings.dart';
-import 'package:catalyst/config/colors/app_colors.dart';
 import 'package:catalyst/config/style/icons_broken.dart';
 import 'package:catalyst/core/extentions/navigation.dart';
 import 'package:catalyst/core/shared_widgets/app_bar.dart';
@@ -31,7 +30,11 @@ class AddEditUserScreen extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         leading: IconButton(
-          onPressed: () => context.pop(),
+          onPressed: () {
+            context.pop();
+            context
+                .read<AddEditViewModel>().clearValues();
+          },
           icon: const Icon(
             IconBroken.Arrow___Left,
             size: 20,
